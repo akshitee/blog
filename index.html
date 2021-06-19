@@ -1,28 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Sir Tim Berners-Lee</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-<!--
-ADD CENTER TAG
+    <!--
+
 -->
-
-    <ul class="menu">
-        <li class="links"><a href="#welcome">HOME</a></li>
-        <li class="links"><a href="#videos">VIDEOS</a></li>
-        <li class="links"><a href="#work">WORK</a></li>
-        <li class="links"><a href="#writings">WRITINGS</a></li>
-        <li class="links"><a href="#contact">CONTACT</a></li>
-
-    </ul>
-
+    <div class="container">
+    <center>
+        <nav class="navbar-inverse my_nav_bar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> <a class="navbar-brand" href="#">Akshitee singh</a> </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#welcome">HOME</a></li>
+                    <li><a href="#videos">VIDEOS</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#writings">WRITINGS</a></li>
+                    <li><a href="#aboutMe">BLOG</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </center>
     <section id="welcome">
         <div class="parallax-inner">
             <img src="stbl.jpg" class="profile" />
@@ -71,10 +85,32 @@ ADD CENTER TAG
         <br>
         <a class="article" href="https://interestingengineering.com/how-did-tim-berners-lee-change-the-world-with-the-world-wide-web" target="_blank">How Did Tim Berners-Lee Change the World With the World Wide Web?</a>
     </section>
-<br>
+    <br>
 
-<!--
-ADD CONTACT SECTION HERE
--->
+    <!- ADD CONTACT SECTION HERE -->
+        <section id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186077.9458231468!2d80.82331201380958!3d26.875033536318423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1619772414894!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact_1">
+                <a href="mailto:akshitee.singh@.gmail.com?Subject=hello">
+                    <i class="fa fa-envelope"></i>&nbsp;&nbsp;<h3>akshitee.singh@.gmail.com</h3></a>
+                <br>
+                <br>
+                <a href="#">
+                    <i class="fa fa-instagram"></i>&nbsp;&nbsp;<h3>myinstagramid</h3></a>
+            </div>
+            <div class="contact_2 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <form>
+                <span>Name : </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" required>
+                <br>
+                <br>
+                 <span>comment : </span><input type="text" name="comment" required>
+                    <br>
+                    <br>
+                    <input type="submit" value="submit" class="btn btn-success">
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
 
-</body></html>
+</html>
